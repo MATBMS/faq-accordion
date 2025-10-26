@@ -1,0 +1,32 @@
+:root {
+  /* Colors */
+  --color-white: hsl(0, 100%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-purple-100: hsl(275, 100%, 97%);
+  --color-purple-600: hsl(292, 16%, 49%);
+  --color-purple-950: hsl(292, 42%, 14%);
+  --color-violet-600: hsl(281, 83%, 54%);
+
+  /* Typography */
+  --font-family: 'Work Sans', sans-serif;
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --font-size-xl: 56px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-tight: 21px;
+  --line-height-normal: 24px;
+  --line-height-relaxed: 66px;
+
+  /* Spacing */
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+
+  /* Layout Breakpoints */
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+}

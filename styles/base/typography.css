@@ -1,0 +1,36 @@
+/* Import */
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../../fonts/WorkSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Work Sans Italic';
+  src: url('../../fonts/WorkSans-Italic.ttf') format('truetype');
+}
+
+/* Base typography styles - shared properties */
+[class*="text-preset-"] {
+  font-family: var(--font-family);
+  font-style: normal;
+  color: var(--color-purple-950);
+}
+
+/* Text presets - specific variations */
+.text-preset-1 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-relaxed);
+}
+
+.text-preset-2 {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.text-preset-3 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}
