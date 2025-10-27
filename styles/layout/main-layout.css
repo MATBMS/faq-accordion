@@ -1,0 +1,21 @@
+main {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(../../images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: var(--color-purple-100);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+/* SMALL MOBILE (375px and up) */
+@media (min-width: 375px) {}
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {}

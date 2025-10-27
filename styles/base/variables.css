@@ -11,7 +11,7 @@
   --font-family: 'Work Sans', sans-serif;
   --font-size-base: 16px;
   --font-size-large: 18px;
-  --font-size-xl: 56px;
+  --font-size-xl: 32px;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -29,4 +29,20 @@
   /* Layout Breakpoints */
   --breakpoint-mobile: 375px;
   --breakpoint-desktop: 1440px;
+}
+
+
+
+/* SMALL MOBILE (375px and up) */
+@media (min-width: 375px) {}
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {
+  :root {
+    /* Typography */
+    --font-size-xl: 56px;
+  }
 }

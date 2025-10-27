@@ -1,0 +1,63 @@
+/* FAQ CARD */
+#faq {
+  /* layout */
+  width: calc(330 / 375 * 100vw);
+  padding: var(--spacing-300);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  /* style */
+  border-radius: 8px;
+  background-color: var(--color-white);
+  box-shadow: 0 32px 56px 0 rgba(80, 0, 118, 0.10);
+}
+
+/* CARD TITLE */
+.card-title {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-300);
+}
+
+/* FAQ LIST */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300, 24px);
+  align-self: stretch;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-purple-100);
+  border: none;
+}
+
+/* FAQ TITLE */
+.faq-title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-300);
+  align-self: stretch;
+}
+
+.faq-title-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* FAQ ITEM */
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  align-self: stretch;
+}
+
+/* FAQ TITLE */
+
+/* FAQ TEXT */
