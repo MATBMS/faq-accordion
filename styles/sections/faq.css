@@ -11,6 +11,7 @@
   border-radius: 8px;
   background-color: var(--color-white);
   box-shadow: 0 32px 56px 0 rgba(80, 0, 118, 0.10);
+  z-index: 1;
 }
 
 /* CARD TITLE */
@@ -38,10 +39,15 @@ hr {
 
 /* FAQ TITLE */
 .faq-title {
+  width: 100%;
   display: flex;
-  align-items: center;
-  gap: var(--spacing-300);
-  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.faq-title h2 {
+  width: calc(265 / 330 * 100%);
 }
 
 .faq-title-icon {
@@ -58,6 +64,26 @@ hr {
   align-self: stretch;
 }
 
-/* FAQ TITLE */
+/* SMALL MOBILE (375px and up) */
+@media (min-width: 375px) {}
 
-/* FAQ TEXT */
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+
+  /* FAQ CARD */
+  #faq {
+    /* layout */
+    width: calc(600 / 768 * 100vw);
+    padding: var(--spacing-500);
+    gap: var(--spacing-400);
+    /* style */
+    border-radius: 16px;
+  }
+
+  .faq-title h2 {
+    width: 100%;
+  }
+}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {}
