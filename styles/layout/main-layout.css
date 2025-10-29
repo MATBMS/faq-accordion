@@ -29,6 +29,11 @@ main::before {
 
 /* TABLET (768px and up) */
 @media (min-width: 768px) {
+  main {
+    padding-top: 170px;
+    padding-bottom: 170px;
+  }
+
   main::before {
     height: 320px;
     background-image: url(../../images/background-pattern-desktop.svg);
