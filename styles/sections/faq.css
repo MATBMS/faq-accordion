@@ -74,6 +74,7 @@ hr {
   #faq {
     /* layout */
     width: calc(600 / 768 * 100vw);
+    max-width: 600px;
     padding: var(--spacing-500);
     gap: var(--spacing-400);
     /* style */
