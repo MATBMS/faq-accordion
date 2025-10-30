@@ -1,24 +1,24 @@
 /* Display utilities for JavaScript interactions */
 .hide {
-  display: none !important;
+  display: none;
 }
 
 .show {
-  display: block !important;
+  display: block;
 }
 
 .show-flex {
-  display: flex !important;
+  display: flex;
 }
 
 .show-inline {
-  display: inline !important;
+  display: inline;
 }
 
 .invisible {
-  visibility: hidden !important;
+  visibility: hidden;
 }
 
 .visible {
-  visibility: visible !important;
+  visibility: visible;
 }
