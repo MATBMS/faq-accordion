@@ -44,12 +44,30 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
+  /* Button reset styles */
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+  /* Focus and accessibility styles */
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.faq-title:focus-visible {
+  outline: 2px solid var(--color-violet-600, #AD28EB);
+  outline-offset: 2px;
+  background-color: var(--color-purple-50, rgba(80, 0, 118, 0.05));
 }
 
 .faq-title h2 {
   width: calc(265 / 330 * 100%);
 }
 
+.faq-title:active h2,
 .faq-title h2:active {
   color: var(--color-violet-600);
 }
