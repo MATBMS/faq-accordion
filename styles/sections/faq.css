@@ -50,9 +50,21 @@ hr {
   width: calc(265 / 330 * 100%);
 }
 
-.faq-title-icon {
+.faq-title h2:active {
+  color: var(--color-violet-600);
+}
+
+.faq-title-icon-minus,
+.faq-title-icon-plus {
   width: 30px;
   height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.faq-title-icon-minus:hover,
+.faq-title-icon-plus:hover {
+  transform: scale(1.1) rotate(180deg);
 }
 
 /* FAQ ITEM */
