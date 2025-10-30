@@ -1,7 +1,7 @@
 // FAQ Accordion with Accessibility and Keyboard Navigation
 class FAQAccordion {
   constructor() {
-    this.faqButtons = document.querySelectorAll('.faq-title');
+    this.faqButtons = document.querySelectorAll('.faq-toggle');
     this.init();
   }
 
@@ -18,9 +18,9 @@ class FAQAccordion {
 
   toggleFAQ(button) {
     const isExpanded = button.getAttribute('aria-expanded') === 'true';
-    const answer = button.nextElementSibling;
-    const plusIcon = button.querySelector('.faq-title-icon-plus');
-    const minusIcon = button.querySelector('.faq-title-icon-minus');
+    const answer = button.closest('.faq-item').querySelector('[role="region"]');
+    const plusIcon = button.querySelector('.faq-icon-plus');
+    const minusIcon = button.querySelector('.faq-icon-minus');
 
     if (isExpanded) {
       // Collapse the FAQ
@@ -36,7 +36,6 @@ class FAQAccordion {
       minusIcon.classList.remove('hide');
     }
   }
-
   handleKeydown(event, currentIndex) {
     const key = event.key;
 
@@ -44,7 +43,7 @@ class FAQAccordion {
       case 'Enter':
       case ' ': // Spacebar
         event.preventDefault();
-        this.toggleFAQ(event.target.closest('.faq-title'));
+        this.toggleFAQ(event.target.closest('.faq-toggle'));
         break;
 
       case 'ArrowDown':

@@ -24,9 +24,6 @@ main::before {
   z-index: 0;
 }
 
-/* SMALL MOBILE (375px and up) */
-@media (min-width: 375px) {}
-
 /* TABLET (768px and up) */
 @media (min-width: 768px) {
   main {
@@ -39,6 +36,3 @@ main::before {
     background-image: url(../../images/background-pattern-desktop.svg);
   }
 }
-
-/* DESKTOP (1440px and up) */
-@media (min-width: 1440px) {}

@@ -37,51 +37,74 @@ hr {
   border: none;
 }
 
-/* FAQ TITLE */
-.faq-title {
+/* FAQ HEADER */
+.faq-header {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
+}
+
+/* FAQ TOGGLE BUTTON */
+.faq-toggle {
   /* Button reset styles */
   background: none;
   border: none;
   padding: 0;
-  font: inherit;
   cursor: pointer;
   outline: none;
-  text-align: left;
   /* Focus and accessibility styles */
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.faq-title:focus-visible {
+.faq-toggle:hover {
+  background-color: var(--color-purple-50, rgba(80, 0, 118, 0.05));
+}
+
+.faq-toggle:focus-visible {
   outline: 2px solid var(--color-violet-600, #AD28EB);
   outline-offset: 2px;
   background-color: var(--color-purple-50, rgba(80, 0, 118, 0.05));
 }
 
-.faq-title h2 {
+/* Screen reader only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.faq-header h2 {
   width: calc(265 / 330 * 100%);
 }
 
-.faq-title:active h2,
-.faq-title h2:active {
+.faq-toggle:active+h2,
+.faq-header h2:hover {
   color: var(--color-violet-600);
 }
 
-.faq-title-icon-minus,
-.faq-title-icon-plus {
+.faq-icon-minus,
+.faq-icon-plus {
   width: 30px;
   height: 30px;
-  cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
 
-.faq-title-icon-minus:hover,
-.faq-title-icon-plus:hover {
+.faq-toggle:hover .faq-icon-minus,
+.faq-toggle:hover .faq-icon-plus {
   transform: scale(1.1) rotate(180deg);
 }
 
@@ -93,9 +116,6 @@ hr {
   gap: var(--spacing-300);
   align-self: stretch;
 }
-
-/* SMALL MOBILE (375px and up) */
-@media (min-width: 375px) {}
 
 /* TABLET (768px and up) */
 @media (min-width: 768px) {
@@ -111,10 +131,7 @@ hr {
     border-radius: 16px;
   }
 
-  .faq-title h2 {
+  .faq-header h2 {
     width: 100%;
   }
 }
-
-/* DESKTOP (1440px and up) */
-@media (min-width: 1440px) {}

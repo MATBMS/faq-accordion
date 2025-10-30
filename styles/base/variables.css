@@ -31,14 +31,6 @@
   --breakpoint-desktop: 1440px;
 }
 
-
-
-/* SMALL MOBILE (375px and up) */
-@media (min-width: 375px) {}
-
-/* TABLET (768px and up) */
-@media (min-width: 768px) {}
-
 /* DESKTOP (1440px and up) */
 @media (min-width: 1440px) {
   :root {
